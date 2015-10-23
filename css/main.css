@@ -1,0 +1,222 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600,700);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@-webkit-keyframes border-pulse {
+  0% {
+    box-shadow: 0 0 0 1rem rgba(255, 255, 255, 0.1), 0 0 0 2rem rgba(255, 255, 255, 0.15), 0 0 0 3rem rgba(255, 255, 255, 0.2); }
+  50% {
+    box-shadow: 0 0 0 1.25rem rgba(255, 255, 255, 0.1), 0 0 0 2.75rem rgba(255, 255, 255, 0.1), 0 0 0 4rem rgba(255, 255, 255, 0); }
+  75% {
+    box-shadow: 0 0 0 1.5rem rgba(255, 255, 255, 0.1), 0 0 0 3rem rgba(255, 255, 255, 0), 0 0 0 5rem rgba(255, 255, 255, 0); }
+  100% {
+    box-shadow: 0 0 0 1.75rem rgba(255, 255, 255, 0), 0 0 0 3.75rem rgba(255, 255, 255, 0), 0 0 0 6rem rgba(255, 255, 255, 0); } }
+
+@keyframes border-pulse {
+  0% {
+    box-shadow: 0 0 0 1rem rgba(255, 255, 255, 0.1), 0 0 0 2rem rgba(255, 255, 255, 0.15), 0 0 0 3rem rgba(255, 255, 255, 0.2); }
+  50% {
+    box-shadow: 0 0 0 1.25rem rgba(255, 255, 255, 0.1), 0 0 0 2.75rem rgba(255, 255, 255, 0.1), 0 0 0 4rem rgba(255, 255, 255, 0); }
+  75% {
+    box-shadow: 0 0 0 1.5rem rgba(255, 255, 255, 0.1), 0 0 0 3rem rgba(255, 255, 255, 0), 0 0 0 5rem rgba(255, 255, 255, 0); }
+  100% {
+    box-shadow: 0 0 0 1.75rem rgba(255, 255, 255, 0), 0 0 0 3.75rem rgba(255, 255, 255, 0), 0 0 0 6rem rgba(255, 255, 255, 0); } }
+
+html {
+  font-family: "Raleway", serif;
+  font-size: 18px; }
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600; }
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 500; }
+
+h1, h2, h3 {
+  text-align: center; }
+
+.welcome {
+  background: #ed4343;
+  height: 100vh;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10% 0; }
+  .welcome h1, .welcome h2 {
+    padding: inherit;
+    width: 100%;
+    color: white; }
+  .welcome h1 {
+    text-transform: uppercase; }
+  .welcome div.enter-button {
+    padding: inherit;
+    width: 100%;
+    text-align: center; }
+  .welcome a {
+    display: block;
+    width: 75px;
+    height: 75px;
+    background: #fff;
+    border-radius: 50%;
+    -webkit-animation: border-pulse 1s infinite;
+            animation: border-pulse 1s infinite;
+    margin: 0 auto; }
+
+.who {
+  background-color: black;
+  height: 100vh; }
+  .who h1, .who h2 {
+    color: white;
+    padding: 8% 0; }
+  .who h1 {
+    font-size: 2.3rem;
+    font-weight: 700; }
+  .who form {
+    width: 85%;
+    margin: 0 auto; }
+    .who form button {
+      width: 100%;
+      background-color: #ed4343;
+      margin-top: 20%;
+      border: none;
+      font-size: 1.2rem;
+      color: white;
+      padding: 1rem 2rem; }
+    .who form input::-webkit-input-placeholder {
+      color: #ed4343; }
+    .who form input::-moz-placeholder {
+      color: #ed4343; }
+    .who form input:-ms-input-placeholder {
+      color: #ed4343; }
+    .who form input::placeholder {
+      color: #ed4343; }
+    .who form input, .who form select {
+      display: block;
+      width: 100%;
+      margin: 6% auto;
+      color: #ed4343;
+      height: 2rem; }
+    .who form select#occupation {
+      background-color: white; }
+
+.recent {
+  color: black; }
+  .recent footer {
+    height: 20vh;
+    background-color: black;
+    padding-top: 10%; }
+    .recent footer .button {
+      width: 80%;
+      background-color: #ed4343;
+      text-align: center;
+      border: none;
+      font-size: 1.2rem;
+      color: white;
+      padding: 1rem 2rem;
+      margin: 0 auto; }
+  .recent ul {
+    overflow: scroll;
+    height: 58vh;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 1rem; }
+    .recent ul li {
+      margin: 1rem auto;
+      padding-left: 5%; }
+  .recent h1 {
+    padding-top: 5%;
+    font-weight: 700; }
+  .recent h3 {
+    font-weight: 700; }
+
+.report {
+  background-color: black;
+  height: 100vh;
+  color: white;
+  font-family: inherit; }
+  .report form {
+    width: 90%;
+    margin: 0 auto; }
+    .report form input::-webkit-input-placeholder {
+      color: #ed4343; }
+    .report form input::-moz-placeholder {
+      color: #ed4343; }
+    .report form input:-ms-input-placeholder {
+      color: #ed4343; }
+    .report form input::placeholder {
+      color: #ed4343; }
+    .report form textarea::-webkit-input-placeholder {
+      color: #ed4343; }
+    .report form textarea::-moz-placeholder {
+      color: #ed4343; }
+    .report form textarea:-ms-input-placeholder {
+      color: #ed4343; }
+    .report form textarea::placeholder {
+      color: #ed4343; }
+    .report form textarea {
+      width: 100%; }
+    .report form input, .report form select {
+      display: block;
+      width: 100%;
+      margin: 6% auto;
+      color: #ed4343;
+      height: 2rem; }
+    .report form button {
+      width: 100%;
+      background-color: #ed4343;
+      margin-top: 20%;
+      border: none;
+      font-size: 1.2rem;
+      color: white;
+      padding: 1rem 2rem; }
+    .report form h1 {
+      padding-top: 5%;
+      font-weight: 700; }
+    .report form h3 {
+      font-weight: 700;
+      padding-bottom: 5%; }

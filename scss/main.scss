@@ -1,0 +1,185 @@
+@import 'reset';
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600,700);
+@keyframes border-pulse {
+    0% {
+        box-shadow: 0 0 0 1rem rgba(255, 255, 255, .1), 0 0 0 2rem rgba(255, 255, 255, .15), 0 0 0 3rem rgba(255, 255, 255, .2)
+    }
+    50% {
+        box-shadow: 0 0 0 1.25rem rgba(255, 255, 255, .1), 0 0 0 2.75rem rgba(255, 255, 255, .1), 0 0 0 4rem rgba(255, 255, 255, 0)
+    }
+    75% {
+        box-shadow: 0 0 0 1.5rem rgba(255, 255, 255, .1), 0 0 0 3rem rgba(255, 255, 255, 0), 0 0 0 5rem rgba(255, 255, 255, 0)
+    }
+    100% {
+        box-shadow: 0 0 0 1.75rem rgba(255, 255, 255, 0), 0 0 0 3.75rem rgba(255, 255, 255, 0), 0 0 0 6rem rgba(255, 255, 255, 0)
+    }
+}
+
+$brand-red: #ed4343;
+html {
+  font-family:"Raleway", serif;
+  font-size: 18px;
+}
+body {
+
+}
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+h1,h2,h3 {
+    text-align: center;
+}
+.welcome {
+  background: $brand-red;
+  width: 100%;
+  height: 100vh;
+  // display: flex;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10% 0;
+  h1,h2{
+  padding: inherit;
+  width: 100%;
+  // flex: 1;
+
+  color: white;
+
+}
+  h1 {
+
+    text-transform: uppercase;
+  }
+  div.enter-button{
+    padding: inherit;
+    width: 100%;
+    text-align: center;
+    // display: flex;
+
+  }
+    a {
+    display: block;
+    width: 75px;
+    height: 75px;
+    background: #fff;
+    border-radius: 50%;
+    animation: border-pulse 1s infinite;
+    margin: 0 auto;
+  }
+}
+.who {
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  h1,h2 {color: white;padding:8% 0;}
+  h1 {font-size: 2.3rem;font-weight: 700;}
+  form {
+    width:85%;
+    margin: 0 auto;
+    button {
+      width: 100%;
+      background-color: $brand-red;
+      margin-top: 20%;
+      border: none;
+      font-size: 1.2rem;
+      color: white;
+      padding: 1rem 2rem;
+    }
+    input::placeholder { color: $brand-red; }
+    input, select {
+      display: block;
+      width: 100%;
+      margin: 6% auto;
+      color: $brand-red;
+      height: 2rem;
+    }
+    select#occupation {
+      background-color: white;
+    }
+  }
+}
+
+.recent {
+  color: black;
+  width: 100%;
+  height: 100vw;
+  footer {
+    height: 20vh;
+    background-color: black;
+    padding-top: 10%;
+    .button {
+      width: 80%;
+      background-color: $brand-red;
+      text-align: center;
+      border: none;
+      font-size: 1.2rem;
+      color: white;
+      padding: 1rem 2rem;
+      margin: 0 auto;
+            }
+          }
+  ul {
+    overflow: scroll;
+    height: 58vh;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 1rem;
+    li {
+      margin: 1rem auto;
+      padding-left: 5%;
+    }
+  }
+  h1 {
+    padding-top: 5%;
+    font-weight: 700;
+  }
+  h3 {
+    font-weight: 700;
+  }
+}
+
+.report {
+  background-color: black;
+  height: 100vh;
+  color: white;
+  font-family: inherit;
+    form {
+      width: 90%;
+      margin: 0 auto;
+        input::placeholder { color: $brand-red; }
+        textarea::placeholder { color: $brand-red; }
+
+        textarea {
+          width: 100%;
+        }
+        input, select {
+          display: block;
+          width: 100%;
+          margin: 6% auto;
+          color: $brand-red;
+          height: 2rem;
+        }
+        button {
+          width: 100%;
+          background-color: $brand-red;
+          margin-top: 20%;
+          border: none;
+          font-size: 1.2rem;
+          color: white;
+          padding: 1rem 2rem;
+    }
+    h1 {
+      padding-top: 5%;
+      font-weight: 700;
+    }
+    h3 {
+      font-weight: 700;
+      padding-bottom: 5%;
+    }
+
+}
+}

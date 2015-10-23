@@ -1,0 +1,34 @@
+<div class="who">
+  <h1>Who are you?</h1>
+
+  <form name ="who-form" class="who-form"  novalidate>
+   <!-- ng-submit="sendRegistration($event)" -->
+  <!-- <span class="error" ng-show="voter-info.input.$error.required">Required!</span> -->
+  <div>
+            <input type="text" name="name" id="name" placeholder="Name"  />
+            <!---ng-model="name" ng-required="true" ng-maxlength="140" ng-minlength="2"-->
+  </div>
+
+  <div>
+
+    <input type="number" name="age" id="age" placeholder="Age"  />
+    <!-- ng-model="age" ng-required="true" ng-maxlength="3" ng-minlength="1" -->
+  </div>
+  <div>
+
+    <select name="occupation" id="occupation" >
+      <!-- ng-model="province" ng-required="true"  -->
+      <option value="" disable selected>Select occupation</option>
+      <option value="janitor">Janitor</option>
+      <option value="alien">Alien Hunter</option>
+      <option value="dust">Dust Farmer</option>
+      <option value="battery">Battery technician</option>
+      <option value="yoga">Yoga teacher</option>
+    </select>
+  </div>
+  <div>
+    <button class="button" ui-sref="encounters" >Check in</button>
+    <!--  ng-click="enter($event, checkinForm)" -->
+  </div>
+</form>
+</div>

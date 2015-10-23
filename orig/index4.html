@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Mars</title>
+		<meta name="description" content="Mars Program">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="./css/main.css">
+	</head>
+	<body>
+		<header>
+		</header>
+		<div class="report">
+			<h1>Report Encounter</h1>
+			<h3>Safety on Mars is your responsibility</h3>
+
+			<form name ="report-form" class="report-form"  novalidate>
+
+				<div>
+			    <select name="alien" id="alien" >
+
+						<option value="" disable selected>Select alien type</option>
+			      <option value="Lizard Man">Lizard Man</option>
+					</select>
+				</div>
+		  <div>
+				<textarea placeholder="Action taken" rows="10"></textarea>
+				<!-- ng-model="actionTaken" name="Action_taken" -->
+		  </div>
+
+
+
+			<div>
+				<button class="button" >Check in</button>
+				<!--  ng-click="enter($event, checkinForm)" -->
+			</div>
+		</form>
+		</div>
+		<footer>
+		</footer>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
