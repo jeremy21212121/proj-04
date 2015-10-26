@@ -66,6 +66,23 @@ table {
   100% {
     box-shadow: 0 0 0 1.75rem rgba(255, 255, 255, 0), 0 0 0 3.75rem rgba(255, 255, 255, 0), 0 0 0 6rem rgba(255, 255, 255, 0); } }
 
+@-webkit-keyframes invalid-input {
+  0% {
+    box-shadow: 0 0 0 0rem #ed4343; }
+  100% {
+    box-shadow: 0 0 0 0.5rem rgba(237, 67, 67, 0.2); } }
+
+@keyframes invalid-input {
+  0% {
+    box-shadow: 0 0 0 0rem #ed4343; }
+  100% {
+    box-shadow: 0 0 0 0.5rem rgba(237, 67, 67, 0.2); } }
+
+.invalid {
+  -webkit-animation: invalid-input 1s infinite;
+          animation: invalid-input 1s infinite;
+  background-color: rgba(237, 67, 67, 0.3); }
+
 html {
   font-family: "Raleway", serif;
   font-size: 18px; }
@@ -83,6 +100,7 @@ h1, h2, h3 {
 
 .welcome {
   background: #ed4343;
+  width: 100%;
   height: 100vh;
   text-align: center;
   margin: 0 auto;
@@ -109,6 +127,7 @@ h1, h2, h3 {
 
 .who {
   background-color: black;
+  width: 100%;
   height: 100vh; }
   .who h1, .who h2 {
     color: white;
@@ -145,7 +164,9 @@ h1, h2, h3 {
       background-color: white; }
 
 .recent {
-  color: black; }
+  color: black;
+  width: 100%;
+  height: 100vw; }
   .recent footer {
     height: 20vh;
     background-color: black;

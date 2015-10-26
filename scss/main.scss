@@ -1,5 +1,6 @@
 @import 'reset';
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600,700);
+$brand-red: #ed4343;
 @keyframes border-pulse {
     0% {
         box-shadow: 0 0 0 1rem rgba(255, 255, 255, .1), 0 0 0 2rem rgba(255, 255, 255, .15), 0 0 0 3rem rgba(255, 255, 255, .2)
@@ -14,8 +15,22 @@
         box-shadow: 0 0 0 1.75rem rgba(255, 255, 255, 0), 0 0 0 3.75rem rgba(255, 255, 255, 0), 0 0 0 6rem rgba(255, 255, 255, 0)
     }
 }
+@keyframes invalid-input {
+	0% {
+		box-shadow:
+			0 0 0 0rem rgba($brand-red, 1);
+	}
+	100% {
+		box-shadow:
+			0 0 0 0.5rem rgba($brand-red, 0.2);
+	}
+}
 
-$brand-red: #ed4343;
+.invalid {
+  animation: invalid-input 1s infinite;
+  background-color: rgba(237, 67, 67, 0.3);
+}
+
 html {
   font-family:"Raleway", serif;
   font-size: 18px;
